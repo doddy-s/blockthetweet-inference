@@ -1,0 +1,20 @@
+struct Prediction {
+    float confidence;
+    bool positive;
+}
+
+//my main action
+Prediction mainAction() {
+    return Prediction;
+}
+
+void handleRequest() {
+    //read post requst
+    //read body of request, the body is json with field "id" and "text"
+    //pass id and text to main action
+    //create response to client with json of Prediction
+}
+
+int main() {
+    //craete server and serve
+}

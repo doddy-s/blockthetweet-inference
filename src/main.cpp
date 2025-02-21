@@ -94,7 +94,7 @@ std::vector<int64_t> tokenizeText(const std::string& text, size_t max_length) {
 bool predictText(const std::string& text, Prediction& prediction) {
     try {
         // Tokenize the input text
-        std::vector<int64_t> input_data = tokenizeText(text, 32);
+        std::vector<int64_t> input_data = tokenizeText(text, 34);
         torch::Tensor input_tensor = torch::tensor(input_data, torch::dtype(torch::kLong)).unsqueeze(0);
         std::vector<torch::jit::IValue> inputs;
         inputs.push_back(input_tensor);
